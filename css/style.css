@@ -187,9 +187,8 @@ background: linear-gradient(132deg, rgba(255, 234, 234, 1) 27%, rgba(230, 214, 2
 .button2{
      display: block;
     border-radius: 40px;
-    width: 158px;
     color: black;
-    padding: 7px 20px 7px 20px ;
+    padding: 10px ;
     border: solid 1px black;
      background: linear-gradient(to left,
          transparent 50%,
