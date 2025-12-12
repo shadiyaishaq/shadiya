@@ -29,6 +29,7 @@
     .toggle {
         position: relative;
         z-index: 22;
+            padding-right: 10px
 
     }
 
@@ -55,7 +56,9 @@ li{
         padding-top: 100px;
         padding-left: 65px;
     }
-
+.heroPort {
+    margin: 0px 16px;
+}
     .toggle.show span:nth-child(2) {
         width: 0;
     }
@@ -101,12 +104,16 @@ li{
     transform: translateX(50%) translateY(0%);
 }
 
+
+.logo{
+    padding-left: 15px;
+}
     .button {
         margin-right: 56px;
 
     }
 .menu{
-    padding-left: 45px;
+    padding-left: 100px;
 }
     .heroimg img {
         padding-top: 100px;
@@ -194,7 +201,7 @@ li{
 
 @media screen and (max-width: 600px) {
     .aboutconts p {
-        top: 69%;
+        top: 60%;
         font-size: 20px;
     }
 
@@ -266,7 +273,7 @@ li{
     }
 
     .procont p {
-        top: 70%;
+        top: 60%;
         font-size: 20px;
     }
 
@@ -361,8 +368,8 @@ li{
 
     .contact p {
         font-size: 20px;
-        top: 63%;
-        right: 22%;
+                top: 60%;
+        right: 31%;
     }
 
     .icons2 {
