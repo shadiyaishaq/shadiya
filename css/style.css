@@ -183,6 +183,7 @@ background: linear-gradient(132deg, rgba(255, 234, 234, 1) 27%, rgba(230, 214, 2
 .buttons{
     display: flex;
     justify-content: center;
+    padding-bottom: 20px;
 }
 .button2{
      display: block;
