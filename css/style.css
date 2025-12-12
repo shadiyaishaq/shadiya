@@ -175,7 +175,7 @@ background: linear-gradient(132deg, rgba(255, 234, 234, 1) 27%, rgba(230, 214, 2
 }
 .herocont p{
     font-size: 16px;
-    padding-bottom: 20px;
+
 }
 .herocont span{
     font-weight: 600;
@@ -416,9 +416,10 @@ background: linear-gradient(297deg, rgba(230, 186, 186, 0.97) 36%, rgba(230, 214
     color: #000;
     border-radius: 28px;
     margin-top: 30px;
-    width: 100%;
+    width: 85%;
     padding-top: 60px;
     text-align: center;
+    margin: auto;
 }
 .footer{
     padding-top: 50px;
