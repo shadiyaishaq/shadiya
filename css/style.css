@@ -1,43 +1,43 @@
-body{
+body {
     font-family: "Inter", sans-serif;
     background-color: #F8EDFF !important;
 }
 
 /* --- Minimal Cursor Dot --- */
 .cursor-dot {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 20px;
-  height: 20px;
-  background:  #e6baba;
-background: linear-gradient(105deg, rgba(233, 180, 180, 0.39) 34%, rgba(216, 158, 211, 0.486) 65%, rgba(191, 164, 216, 0.363) 100%, rgba(172, 146, 212, 0.349) 94%, rgba(190, 171, 235, 0.315) 87%);
-  border-radius: 50%;
-  border: solid 1px gray;
-  pointer-events: none;
-  transform: translate(-50%, -50%);
-  transition: background 0.3s ease, transform 0.15s ease;
-  z-index: 9999;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    background: #e6baba;
+    background: linear-gradient(105deg, rgba(233, 180, 180, 0.39) 34%, rgba(216, 158, 211, 0.486) 65%, rgba(191, 164, 216, 0.363) 100%, rgba(172, 146, 212, 0.349) 94%, rgba(190, 171, 235, 0.315) 87%);
+    border-radius: 50%;
+    border: solid 1px gray;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    transition: background 0.3s ease, transform 0.15s ease;
+    z-index: 9999;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 /* White version for dark backgrounds */
 .cursor-dot.light {
-  background: rgba(255, 255, 255, 0.8);
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
 }
 
 /* Hover scale */
-a:hover ~ .cursor-dot,
-button:hover ~ .cursor-dot,
-img:hover ~ .cursor-dot {
-  transform: translate(-50%, -50%) scale(1.5);
+a:hover~.cursor-dot,
+button:hover~.cursor-dot,
+img:hover~.cursor-dot {
+    transform: translate(-50%, -50%) scale(1.5);
 }
 
 
 
 
-.row{
+.row {
     display: flex;
 }
 
@@ -57,17 +57,20 @@ img:hover ~ .cursor-dot {
     bottom: 0;
     width: 0;
     height: 1px;
-    background-color: #000; /* your underline color */
+    background-color: #000;
+    /* your underline color */
     transition: width 0.3s ease;
 }
 
 .menu li a:hover::after {
     width: 100%;
 }
-a{
+
+a {
     color: #000 !important;
 }
-.menu{
+
+.menu {
     display: flex;
     gap: 77px;
     font-size: 18px;
@@ -75,83 +78,95 @@ a{
     padding: 0;
     margin: 0;
 }
-.menu a:hover{
+
+.menu a:hover {
     text-decoration: dashed;
 }
-li{
+
+li {
     list-style: none;
 }
-a{
+
+a {
     text-decoration: none !important;
 }
-.headerall{
+
+.headerall {
     display: flex;
     align-items: center;
 }
+
 .button {
-  position: relative;
-  display: block;
-  border-radius: 40px;
-  width: fit-content;
-  color: black;
-  padding: 10px 30px;
-  margin: auto;
-  
-  border: solid 1px black;
-  overflow: hidden; /* important! hides overflow of the fill */
-  z-index: 1;
-  transition: color 0.4s ease;
+    position: relative;
+    display: block;
+    border-radius: 40px;
+    width: fit-content;
+    color: black;
+    padding: 10px 30px;
+    margin: auto;
+
+    border: solid 1px black;
+    overflow: hidden;
+    /* important! hides overflow of the fill */
+    z-index: 1;
+    transition: color 0.4s ease;
 }
 
 /* Water fill background layer */
 .button::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 0; /* start empty */
-  height: 100%;
-  background: linear-gradient(132deg,
-    rgba(255, 234, 234, 1) 27%,
-    rgba(230, 214, 235, 1) 65%,
-    rgba(221, 206, 236, 1) 100%,
-    rgba(215, 201, 236, 1) 100%,
-    rgba(197, 187, 237, 1) 84%);
-  transition: width 0.5s ease;
-  z-index: -1; /* stays behind text */
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    /* start empty */
+    height: 100%;
+    background: linear-gradient(132deg,
+            rgba(255, 234, 234, 1) 27%,
+            rgba(230, 214, 235, 1) 65%,
+            rgba(221, 206, 236, 1) 100%,
+            rgba(215, 201, 236, 1) 100%,
+            rgba(197, 187, 237, 1) 84%);
+    transition: width 0.5s ease;
+    z-index: -1;
+    /* stays behind text */
 }
 
 /* Hover effect */
 .button:hover::before {
-  width: 100%; /* fills left to right */
+    width: 100%;
+    /* fills left to right */
 }
 
 /* Text and border change when filled */
 .button:hover {
-  color: white; /* text turns white after fill */
-  border: solid 1px transparent;
-  box-shadow: 0px 4px 10px rgba(0,0,0,0.75);
+    color: white;
+    /* text turns white after fill */
+    border: solid 1px transparent;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.75);
 }
 
 
 /*  */
 
-.heroPort{
+.heroPort {
     margin: 0 24px;
     margin-top: 20px;
 
     width: calc(100% - 30px);
 }
-.bgcolor{
+
+.bgcolor {
     background: #FFEAEA;
-background: linear-gradient(132deg, rgba(255, 234, 234, 1) 27%, rgba(230, 214, 235, 1) 65%, rgba(221, 206, 236, 1) 100%, rgba(215, 201, 236, 1) 100%, rgba(197, 187, 237, 1) 84%);
+    background: linear-gradient(132deg, rgba(255, 234, 234, 1) 27%, rgba(230, 214, 235, 1) 65%, rgba(221, 206, 236, 1) 100%, rgba(215, 201, 236, 1) 100%, rgba(197, 187, 237, 1) 84%);
     display: block;
     padding: 0 24px;
     color: #000;
     border-radius: 28px;
     position: relative;
 }
-.header{
+
+.header {
     position: absolute;
     width: 100%;
     top: 52px;
@@ -159,58 +174,65 @@ background: linear-gradient(132deg, rgba(255, 234, 234, 1) 27%, rgba(230, 214, 2
 
 }
 
-.heroimg img{
+.heroimg img {
     margin: auto;
     display: block;
     padding-top: 90px;
 }
-.herocont{
+
+.herocont {
     max-width: 348px;
     margin: auto;
     text-align: center;
     padding-top: 30px;
 }
-.herocont h1{
+
+.herocont h1 {
     padding-bottom: 10px;
 }
-.herocont p{
+
+.herocont p {
     font-size: 16px;
 
 }
-.herocont span{
+
+.herocont span {
     font-weight: 600;
 }
-.buttons{
+
+.buttons {
     display: flex;
     justify-content: center;
     padding-bottom: 20px;
 }
-.button2{
-     display: block;
+
+.button2 {
+    display: block;
     border-radius: 40px;
     color: black;
     padding: 10px 14px;
     border: solid 1px black;
-     background: linear-gradient(to left,
-         transparent 50%,
-         #000000 50%);
-   background-size: 200% 100%;
-   background-position: right bottom;
-   transition: background-position 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+    background: linear-gradient(to left,
+            transparent 50%,
+            #000000 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: background-position 0.3s ease, color 0.3s ease, border-color 0.3s ease;
 }
 
 .button2:hover {
-   background-position: left bottom;
-   color: #ffffff !important;
-   background: rgba(22, 22, 22, 0.944),
-      rgba(6, 6, 6, 0.579);
+    background-position: left bottom;
+    color: #ffffff !important;
+    background: rgba(22, 22, 22, 0.944),
+        rgba(6, 6, 6, 0.579);
 }
 
 
-.aboutsec{
+.aboutsec {
     padding-top: 70px;
 }
-.aboutcont h2{
+
+.aboutcont h2 {
     padding-bottom: 20px;
     padding-top: 10px;
     max-width: 490px;
@@ -218,15 +240,19 @@ background: linear-gradient(132deg, rgba(255, 234, 234, 1) 27%, rgba(230, 214, 2
     font-weight: 480;
     font-size: 46px;
 }
-.aboutcont h4{
+
+.aboutcont h4 {
     font-weight: 650;
 }
-.aboutcont2{
+
+.aboutcont2 {
     padding-top: 55px;
 }
-.aboutcont2 p{
+
+.aboutcont2 p {
     font-size: 20px;
 }
+
 .button3 {
     position: relative;
     display: block;
@@ -237,7 +263,8 @@ background: linear-gradient(132deg, rgba(255, 234, 234, 1) 27%, rgba(230, 214, 2
     background: linear-gradient(132deg, rgba(255, 234, 234, 1) 27%, rgba(230, 214, 235, 1) 65%, rgba(221, 206, 236, 1) 100%);
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
     border: none;
-    overflow: hidden; /* important for hiding the animated fill */
+    overflow: hidden;
+    /* important for hiding the animated fill */
     z-index: 1;
     cursor: pointer;
     transition: color 0.3s ease;
@@ -248,7 +275,8 @@ background: linear-gradient(132deg, rgba(255, 234, 234, 1) 27%, rgba(230, 214, 2
     content: "";
     position: absolute;
     top: 0;
-    left: -100%; /* start outside the button */
+    left: -100%;
+    /* start outside the button */
     width: 100%;
     height: 100%;
     background: linear-gradient(90deg, #8ec5fc, #e0c3fc);
@@ -267,31 +295,36 @@ background: linear-gradient(132deg, rgba(255, 234, 234, 1) 27%, rgba(230, 214, 2
     color: white;
 }
 
-.abtbox{
+.abtbox {
     display: block;
     border-radius: 10px;
     border: solid 1px black;
     color: #000;
     width: fit-content;
     padding: 8px 40px 8px 40px;
-    
+
 }
-.abtbox p{
+
+.abtbox p {
     margin-bottom: 0 !important;
 }
-.abtboxes{
+
+.abtboxes {
     display: flex;
     gap: 20px;
 }
-.abtboxes2{
+
+.abtboxes2 {
     display: flex;
     gap: 20px;
-    padding-top: 20px;    
+    padding-top: 20px;
 }
-.aboutcont2 span{
+
+.aboutcont2 span {
     font-weight: 600;
 }
-.projectbox{
+
+.projectbox {
     width: 100%;
     background-color: #FFCACA;
     display: block;
@@ -300,7 +333,8 @@ background: linear-gradient(132deg, rgba(255, 234, 234, 1) 27%, rgba(230, 214, 2
     padding: 10px;
     margin-bottom: 30px;
 }
-.projectbox1{
+
+.projectbox1 {
     width: 100%;
     background-color: #FFE7B2;
     display: block;
@@ -310,7 +344,7 @@ background: linear-gradient(132deg, rgba(255, 234, 234, 1) 27%, rgba(230, 214, 2
     margin-bottom: 30px;
 }
 
-.projectbox3{
+.projectbox3 {
     width: 100%;
     background-color: #CDE3FF;
     display: block;
@@ -319,16 +353,18 @@ background: linear-gradient(132deg, rgba(255, 234, 234, 1) 27%, rgba(230, 214, 2
     padding: 10px;
     margin-bottom: 30px;
 }
-.projectsec{
+
+.projectsec {
     padding-top: 80px;
 }
-.projectsec img{
+
+.projectsec img {
     width: 100%;
     display: block;
     margin: auto;
 }
 
-.projectsec h4{
+.projectsec h4 {
     font-weight: 650;
     padding-bottom: 10px;
 }
@@ -349,7 +385,8 @@ background: linear-gradient(132deg, rgba(255, 234, 234, 1) 27%, rgba(230, 214, 2
     background: linear-gradient(132deg, rgba(255, 234, 234, 1) 27%, rgba(230, 214, 235, 1) 65%, rgba(221, 206, 236, 1) 100%);
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
     border: none;
-    overflow: hidden; /* important for hiding the animated fill */
+    overflow: hidden;
+    /* important for hiding the animated fill */
     z-index: 1;
     cursor: pointer;
     transition: color 0.3s ease;
@@ -360,7 +397,8 @@ background: linear-gradient(132deg, rgba(255, 234, 234, 1) 27%, rgba(230, 214, 2
     content: "";
     position: absolute;
     top: 0;
-    left: -100%; /* start outside the button */
+    left: -100%;
+    /* start outside the button */
     width: 100%;
     height: 100%;
     background: linear-gradient(90deg, #8ec5fc, #e0c3fc);
@@ -379,14 +417,15 @@ background: linear-gradient(132deg, rgba(255, 234, 234, 1) 27%, rgba(230, 214, 2
     color: white;
 }
 
-.servicesec{
+.servicesec {
     padding-top: 80px;
 }
-.servicecont h4{
+
+.servicecont h4 {
     font-weight: 650;
 }
 
-.serbox{
+.serbox {
     display: block;
     background-color: #dcd7ee98;
     padding: 20px;
@@ -394,150 +433,169 @@ background: linear-gradient(132deg, rgba(255, 234, 234, 1) 27%, rgba(230, 214, 2
     border-radius: 15px;
     text-align: center;
 }
-.serboxes{
+
+.serboxes {
     display: flex;
     gap: 15px;
     padding-bottom: 15px;
 }
-.serbox:hover{
+
+.serbox:hover {
     background: #FFEAEA;
-background: linear-gradient(132deg, rgba(255, 234, 234, 1) 27%, rgba(230, 214, 235, 1) 65%,
- rgba(221, 206, 236, 1) 100%, rgba(215, 201, 236, 1) 100%, rgba(197, 187, 237, 1) 84%);
-box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.75);
--webkit-box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.75);
--moz-box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.75);
-transition: all 0.3s;
+    background: linear-gradient(132deg, rgba(255, 234, 234, 1) 27%, rgba(230, 214, 235, 1) 65%,
+            rgba(221, 206, 236, 1) 100%, rgba(215, 201, 236, 1) 100%, rgba(197, 187, 237, 1) 84%);
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.75);
+    transition: all 0.3s;
 }
-.ftrbox{
-     background: #e6baba;
-background: linear-gradient(297deg, rgba(230, 186, 186, 0.97) 36%, rgba(230, 214, 235, 1) 65%, rgba(221, 206, 236, 1) 100%, rgba(215, 201, 236, 1) 100%, rgba(197, 187, 237, 1) 84%);
+
+.ftrbox {
+    background: #e6baba;
+    background: linear-gradient(297deg, rgba(230, 186, 186, 0.97) 36%, rgba(230, 214, 235, 1) 65%, rgba(221, 206, 236, 1) 100%, rgba(215, 201, 236, 1) 100%, rgba(197, 187, 237, 1) 84%);
     display: block;
     padding: 24px;
     color: #000;
     border-radius: 28px;
     margin-top: 30px;
-    width: 85%;
+    width: 90%;
     padding-top: 60px;
     text-align: center;
     margin: auto;
 }
-.footer{
+
+.footer {
     padding-top: 50px;
-    
+
 }
-.ftrcont h1{
+
+.ftrcont h1 {
     padding-bottom: 30px;
 }
-.ftrcont p{
+
+.ftrcont p {
     font-size: 18px;
     font-weight: 500;
 }
+
 .button5 {
-  position: relative;
-  display: block;
-  border-radius: 40px;
-  width: fit-content;
-  color: black;
-  padding: 10px 40px;
-  margin: auto;
-  border: solid 1px black;
-  overflow: hidden; /* important! hides overflow of the fill */
-  z-index: 1;
-  transition: color 0.4s ease;
+    position: relative;
+    display: block;
+    border-radius: 40px;
+    width: fit-content;
+    color: black;
+    padding: 10px 40px;
+    margin: auto;
+    border: solid 1px black;
+    overflow: hidden;
+    /* important! hides overflow of the fill */
+    z-index: 1;
+    transition: color 0.4s ease;
 }
 
 /* Water fill background layer */
 .button5::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 0; /* start empty */
-  height: 100%;
-  background: linear-gradient(132deg,
-    rgba(255, 234, 234, 1) 27%,
-    rgba(230, 214, 235, 1) 65%,
-    rgb(215, 195, 235) 100%,
-    rgba(215, 201, 236, 1) 100%,
-    rgb(181, 173, 214) 84%);
-  transition: width 0.5s ease;
-  z-index: -1; /* stays behind text */
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    /* start empty */
+    height: 100%;
+    background: linear-gradient(132deg,
+            rgba(255, 234, 234, 1) 27%,
+            rgba(230, 214, 235, 1) 65%,
+            rgb(215, 195, 235) 100%,
+            rgba(215, 201, 236, 1) 100%,
+            rgb(181, 173, 214) 84%);
+    transition: width 0.5s ease;
+    z-index: -1;
+    /* stays behind text */
 }
 
 /* Hover effect */
 .button5:hover::before {
-  width: 100%; /* fills left to right */
+    width: 100%;
+    /* fills left to right */
 }
 
 /* Text and border change when filled */
 .button5:hover {
-  color: white; /* text turns white after fill */
-  border: solid 1px transparent;
-  box-shadow: 0px 4px 10px rgba(0,0,0,0.75);
+    color: white;
+    /* text turns white after fill */
+    border: solid 1px transparent;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.75);
 }
 
 .icons {
-  display: flex;
-  gap: 10px;
-  justify-content: center;
-  margin-top: 20px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 20px;
 }
 
 .icons a {
-  color: #fff;
-  background: transparent;
-  font-size: 20px;
-  width: 35px;
-  height: 35px;
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  border-radius: 50%;
-  text-decoration: none;
-  transition: all 0.3s ease;
-  padding-bottom: 0;
+    color: #fff;
+    background: transparent;
+    font-size: 20px;
+    width: 35px;
+    height: 35px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    border-radius: 50%;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    padding-bottom: 0;
 }
 
 .icons a:hover {
-  transform: translateY(-5px);
+    transform: translateY(-5px);
 }
+
 .icons a.linked:hover {
-  background-color: #6a99e0; /* Red for mail */
+    background-color: #6a99e0;
+    /* Red for mail */
 }
+
 .icons a.mail:hover {
-  background-color: #dc6363; /* Red for mail */
+    background-color: #dc6363;
+    /* Red for mail */
 }
 
 .icons a.whatsapp:hover {
-  background-color: #25D366; /* WhatsApp green */
+    background-color: #25D366;
+    /* WhatsApp green */
 }
 
 .icons a.insta:hover {
-  background: radial-gradient(circle at 30% 107%, 
-    #fdf497 0%, #fdf497 5%, 
-    #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    background: radial-gradient(circle at 30% 107%,
+            #fdf497 0%, #fdf497 5%,
+            #fd5949 45%, #d6249f 60%, #285AEB 90%);
 }
 
-.endcont p{
+.endcont p {
     padding-top: 20px;
 }
 
 
 /* ABOUT */
 
-.aboutconts{
+.aboutconts {
     text-align: center;
     padding-top: 90px;
     padding-bottom: 20px;
     position: relative;
 }
-.aboutconts h1{
+
+.aboutconts h1 {
     font-size: 86px;
     color: #82717128;
     font-weight: 800;
     position: relative;
 }
-.aboutconts p{
+
+.aboutconts p {
     position: absolute;
     top: 55%;
     width: 100%;
@@ -546,102 +604,117 @@ background: linear-gradient(297deg, rgba(230, 186, 186, 0.97) 36%, rgba(230, 214
     font-size: 30px;
     letter-spacing: 7px;
 }
-.aboutsection{
+
+.aboutsection {
     padding-top: 100px;
 }
-.abtimg img{
+
+.abtimg img {
     width: 100%;
 }
-.abtimg img:hover{
-   opacity: 1;
-   visibility: visible;
 
-   transform: scale(1.06);
+.abtimg img:hover {
+    opacity: 1;
+    visibility: visible;
+
+    transform: scale(1.06);
 }
 
 .abtimg img {
 
-   transition: all 0.4s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    transition: all 0.4s cubic-bezier(0.445, 0.05, 0.55, 0.95);
 }
-.abtcontent h3{
+
+.abtcontent h3 {
     padding-bottom: 7px;
     line-height: 1.5;
     max-width: 550px;
     font-size: 32px;
 }
-.abtcontent p{
+
+.abtcontent p {
     max-width: 570px;
     line-height: 1.7;
     font-size: 18px;
 }
-.abtbtns{
+
+.abtbtns {
     display: flex;
     gap: 20px;
     text-align: center;
     padding-top: 25px;
 }
-.button6{
-     display: block;
+
+.button6 {
+    display: block;
     border-radius: 40px;
     width: 200px;
     color: black;
-    padding: 12px 40px 12px 40px ;
+    padding: 12px 40px 12px 40px;
     border: solid 1px black;
 }
-.button6:hover{
-     background: #FFEAEA;
-background: linear-gradient(132deg, rgba(255, 234, 234, 1) 27%, rgba(230, 214, 235, 1) 65%,
- rgba(221, 206, 236, 1) 100%, rgba(215, 201, 236, 1) 100%, rgba(197, 187, 237, 1) 84%);
-box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.75);
--webkit-box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.75);
--moz-box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.75);
-transition: all 0.3s;
-border: solid 1px #FFEAEA;
+
+.button6:hover {
+    background: #FFEAEA;
+    background: linear-gradient(132deg, rgba(255, 234, 234, 1) 27%, rgba(230, 214, 235, 1) 65%,
+            rgba(221, 206, 236, 1) 100%, rgba(215, 201, 236, 1) 100%, rgba(197, 187, 237, 1) 84%);
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.75);
+    transition: all 0.3s;
+    border: solid 1px #FFEAEA;
 }
-.skillsec{
+
+.skillsec {
     padding-top: 80px;
 }
-.skillcont{
+
+.skillcont {
     position: relative;
 }
-.skillcont h1{
+
+.skillcont h1 {
     font-size: 198px;
     color: #82717128;
     font-weight: 800;
-       padding-top: 25px;
+    padding-top: 25px;
     padding-bottom: 30px;
-    
+
     text-align: center;
 }
 
-.aboutbox{
+.aboutbox {
     display: block;
     border-radius: 10px;
     border: solid 1px black;
     color: #000;
     width: 170px;
-    padding: 8px 30px 8px 30px ;
+    padding: 8px 30px 8px 30px;
     text-align: center;
 }
 
-.aboutboxes{
+.aboutboxes {
     display: flex;
     gap: 20px;
 }
-.aboutboxes2{
+
+.aboutboxes2 {
     display: flex;
     gap: 20px;
-    padding-top: 20px;    
+    padding-top: 20px;
 }
-.aboutboxes3{
+
+.aboutboxes3 {
     display: flex;
     gap: 20px;
-    padding-top: 20px;    
+    padding-top: 20px;
 }
-.aboutbox p{
+
+.aboutbox p {
     margin-bottom: 0 !important;
 }
-.abtboxall{
+
+.abtboxall {
     padding-top: 72px;
     padding-bottom: 72px;
 }
@@ -651,20 +724,22 @@ border: solid 1px #FFEAEA;
 
 /* PROJECTS */
 
-.procont{
+.procont {
     position: relative;
     text-align: center;
     padding-top: 90px;
     padding-bottom: 20px;
 }
-.procont h1{
+
+.procont h1 {
     font-size: 86px;
     color: #82717128;
     font-weight: 800;
     position: relative;
 }
-.procont p{
-   position: absolute;
+
+.procont p {
+    position: absolute;
     top: 55%;
     width: 100%;
     left: 50%;
@@ -672,93 +747,107 @@ border: solid 1px #FFEAEA;
     font-size: 30px;
     letter-spacing: 7px;
 }
-.proboxes{
+
+.proboxes {
     padding-top: 60px;
 }
-.prbox{
+
+.prbox {
     width: 100%;
     background-color: #ffcaca3b;
     display: block;
     border-radius: 12px;
     margin: auto;
     padding: 20px;
-    margin-bottom: 30px; 
+    margin-bottom: 30px;
 }
-.prbox2{
+
+.prbox2 {
     width: 100%;
     background-color: #fadfbf7a;
     display: block;
     border-radius: 12px;
     margin: auto;
     padding: 20px;
-    margin-bottom: 30px; 
+    margin-bottom: 30px;
 }
-.prbox3{
+
+.prbox3 {
     width: 100%;
     background-color: #bfe4f652;
     display: block;
     border-radius: 12px;
     margin: auto;
     padding: 20px;
-    margin-bottom: 30px; 
+    margin-bottom: 30px;
 }
-.prbox4{
+
+.prbox4 {
     width: 100%;
     background-color: #dd9f4333;
     display: block;
     border-radius: 12px;
     margin: auto;
     padding: 20px;
-    margin-bottom: 30px; 
+    margin-bottom: 30px;
 }
-.prbox5{
+
+.prbox5 {
     width: 100%;
     background-color: #E6D6EB;
     display: block;
     border-radius: 12px;
     margin: auto;
     padding: 20px;
-    margin-bottom: 30px; 
+    margin-bottom: 30px;
 }
-.primage img{
+
+.primage img {
     width: 100%;
 }
-.center{
+
+.center {
     align-items: center;
 }
-.prcontent h4{
+
+.prcontent h4 {
     padding-bottom: 20px;
     line-height: 1.5;
 }
-.prcontent p{
+
+.prcontent p {
     line-height: 1.7;
 }
-.prcontent span{
+
+.prcontent span {
     font-weight: 600;
 }
 
 
 /* CONTACT */
 
-.contact{
+.contact {
     text-align: center;
     padding-top: 90px;
     padding-bottom: 20px;
 }
-.contact h1{
+
+.contact h1 {
     font-size: 86px;
     color: #82717128;
     font-weight: 800;
     position: relative;
 }
-.contact p{
+
+.contact p {
     position: absolute;
-   top: 55%;
-        right: 40%;
+    top: 55%;
+    right: 40%;
     font-size: 30px;
     letter-spacing: 7px;
 }
-.hello h1{
+
+.hello h1 {
     font-size: 90px;
     color: #82717128;
     font-weight: 800;
@@ -766,17 +855,20 @@ border: solid 1px #FFEAEA;
     padding-bottom: 30px;
     padding-left: 100px;
 }
-.contactsec{
+
+.contactsec {
     padding-top: 40px;
 }
-.hellopara h4{
+
+.hellopara h4 {
     padding-top: 56px;
     line-height: 1.7;
     max-width: 600px;
 }
-.ftrbox2{
+
+.ftrbox2 {
     background: #FFEAEA;
-background: linear-gradient(132deg, rgba(255, 234, 234, 1) 27%, rgba(230, 214, 235, 1) 65%, rgba(221, 206, 236, 1) 100%, rgba(215, 201, 236, 1) 100%, rgba(197, 187, 237, 1) 84%);
+    background: linear-gradient(132deg, rgba(255, 234, 234, 1) 27%, rgba(230, 214, 235, 1) 65%, rgba(221, 206, 236, 1) 100%, rgba(215, 201, 236, 1) 100%, rgba(197, 187, 237, 1) 84%);
     display: block;
     padding: 24px;
     color: #000;
@@ -785,61 +877,69 @@ background: linear-gradient(132deg, rgba(255, 234, 234, 1) 27%, rgba(230, 214, 2
     width: 100%;
     padding-top: 60px;
 }
-.footer1 h2{
+
+.footer1 h2 {
     font-size: 46px;
     padding-left: 90px;
     padding-bottom: 30px;
 }
-.footer1 img{
+
+.footer1 img {
     padding-left: 90px;
 }
-.footer1 p{
+
+.footer1 p {
     padding-left: 90px;
     padding-top: 20px;
     font-size: 22px;
     margin-bottom: 0rem;
 }
+
 .icons2 {
-  display: flex;
-  gap: 10px;
-  padding-bottom: 30px;
-  padding-left: 90px;
+    display: flex;
+    gap: 10px;
+    padding-bottom: 30px;
+    padding-left: 90px;
 }
 
 .icons2 a {
-  color: #fff;
-  background: transparent;
-  font-size: 20px;
-  width: 35px;
-  height: 35px;
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  border-radius: 50%;
-  text-decoration: none;
-  transition: all 0.3s ease;
-  padding-bottom: 0;
+    color: #fff;
+    background: transparent;
+    font-size: 20px;
+    width: 35px;
+    height: 35px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    border-radius: 50%;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    padding-bottom: 0;
 }
 
 .icons2 a:hover {
-  transform: translateY(-5px);
+    transform: translateY(-5px);
 }
 
 .icons2 a.linked:hover {
-  background-color: #6a99e0; /* Red for mail */
+    background-color: #6a99e0;
+    /* Red for mail */
 }
+
 .icons2 a.mail:hover {
-  background-color: #dc6363; /* Red for mail */
+    background-color: #dc6363;
+    /* Red for mail */
 }
 
 .icons2 a.whatsapp:hover {
-  background-color: #25D366; /* WhatsApp green */
+    background-color: #25D366;
+    /* WhatsApp green */
 }
 
 .icons2 a.insta:hover {
-  background: radial-gradient(circle at 30% 107%, 
-    #fdf497 0%, #fdf497 5%, 
-    #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    background: radial-gradient(circle at 30% 107%,
+            #fdf497 0%, #fdf497 5%,
+            #fd5949 45%, #d6249f 60%, #285AEB 90%);
 }
 
 .nameinput {
@@ -849,10 +949,11 @@ background: linear-gradient(132deg, rgba(255, 234, 234, 1) 27%, rgba(230, 214, 2
     border: solid 1px #827171;
     width: 80%;
     color: #000;
-    border-radius:10px;
-        margin-right: 112px;
-   
+    border-radius: 10px;
+    margin-right: 112px;
+
 }
+
 .nameinputs {
     padding: 12px;
     border: none;
@@ -860,73 +961,83 @@ background: linear-gradient(132deg, rgba(255, 234, 234, 1) 27%, rgba(230, 214, 2
     border: solid 1px #827171;
     width: 80%;
     color: #000;
-    border-radius:10px; 
-        margin-right: 112px;
+    border-radius: 10px;
+    margin-right: 112px;
 }
 
 .nameinput::placeholder {
     color: #90959A;
 }
-.msginput{
+
+.msginput {
     width: 80%;
     border-radius: 10px;
     border: solid 1px #827171;
     padding: 10px;
     background-color: transparent;
-        margin-right: 112px;
+    margin-right: 112px;
 }
-.name{
+
+.name {
     padding-bottom: 30px;
 }
-.mail{
+
+.mail {
     padding-bottom: 30px;
 }
-.message textarea{
+
+.message textarea {
     resize: none;
     min-height: 100px;
 
 }
+
 .button7 {
-  position: relative;
-  display: block;
-  border-radius: 40px;
-  width: 80%;
-  color: black;
-  padding: 10px 40px;
-  text-align: center;
-  margin-top: 20px;
-  border: solid 1px #827171;
-  overflow: hidden; /* important! hides overflow of the fill */
-  z-index: 1;
-  transition: color 0.4s ease;
+    position: relative;
+    display: block;
+    border-radius: 40px;
+    width: 80%;
+    color: black;
+    padding: 10px 40px;
+    text-align: center;
+    margin-top: 20px;
+    border: solid 1px #827171;
+    overflow: hidden;
+    /* important! hides overflow of the fill */
+    z-index: 1;
+    transition: color 0.4s ease;
 }
 
 /* Water fill background layer */
 .button7::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 0; /* start empty */
-  height: 100%;
-  background: linear-gradient(132deg,
-    rgba(255, 234, 234, 1) 27%,
-    rgba(230, 214, 235, 1) 65%,
-    rgb(215, 195, 235) 100%,
-    rgba(215, 201, 236, 1) 100%,
-    rgb(181, 173, 214) 84%);
-  transition: width 0.5s ease;
-  z-index: -1; /* stays behind text */
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    /* start empty */
+    height: 100%;
+    background: linear-gradient(132deg,
+            rgba(255, 234, 234, 1) 27%,
+            rgba(230, 214, 235, 1) 65%,
+            rgb(215, 195, 235) 100%,
+            rgba(215, 201, 236, 1) 100%,
+            rgb(181, 173, 214) 84%);
+    transition: width 0.5s ease;
+    z-index: -1;
+    /* stays behind text */
 }
 
 /* Hover effect */
 .button7:hover::before {
-  width: 100%; /* fills left to right */
+    width: 100%;
+    /* fills left to right */
 }
 
 /* Text and border change when filled */
 .button7:hover {
-  color: white; /* text turns white after fill */
-  border: solid 1px transparent;
-  box-shadow: 0px 4px 10px rgba(0,0,0,0.75);
+    color: white;
+    /* text turns white after fill */
+    border: solid 1px transparent;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.75);
 }
