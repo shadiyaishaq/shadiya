@@ -12,9 +12,13 @@
 
 
 @media screen and (max-width: 768px) {
+
+
+
 .cursor-dot {
     display: none;
 }
+    
     .mainmenuhead {
         position: fixed;
         top: 106px;
@@ -52,6 +56,7 @@
         visibility: visible;
 
     }
+    
 li{
     margin-top: 15px;
 }
@@ -60,7 +65,7 @@ li{
         
     }
 .heroPort {
-    margin: 0px 16px;
+    margin: 10px 16px;
 }
     .toggle.show span:nth-child(2) {
         width: 0;
@@ -99,6 +104,20 @@ li{
         font-size: 14px;
     }
 }
+
+
+@media screen and (min-width: 769px)and (max-width: 992px) {
+.aboutcont h2 {
+        font-size: 27px;
+    }
+    .aboutcont2 {
+    padding-top: 47px;
+}
+
+}
+
+
+
 
 @media screen and (max-width: 600px) {
 
@@ -161,8 +180,10 @@ li{
      .abtcontent p{
         font-size: 16px;
      }
+     .skillcont h1 {
+    font-size: 173px;
     }
-
+}
 @media screen and (max-width: 768px) {
 
 
@@ -197,6 +218,20 @@ li{
         }
 
 
+
+        @media screen and (min-width: 769px)and (max-width: 992px) {
+
+    .aboutbox p {
+        font-size: 13px;
+    }
+    .aboutbox {
+        padding: 8px 6px 8px 6px;
+}
+.skillcont h1 {
+    font-size: 125px;
+    padding-top: 45px;
+}
+        }
 @media screen and (max-width: 600px) {
     .aboutconts p {
         top: 60%;
@@ -317,6 +352,7 @@ li{
 
     .contact p {
         right: 30%;
+        top: 56%
     }
 
     .hello h1 {
@@ -352,6 +388,25 @@ li{
         padding-left: 53px;
     }
 
+}
+
+@media screen and (min-width: 769px)and (max-width: 992px) {
+    .hello h1{
+        font-size: 80px;
+        padding-left: 0;
+        padding-top: 0;
+    }
+    .hellopara h4 {
+    padding-top: 14px;
+    font-size: 20px;
+    }
+    .ftrbox2 {
+        margin-top: 0;
+    }
+        .contact p {
+        top: 56%;
+        right: 31%;
+        }
 }
 
 @media screen and (max-width: 600px) {
