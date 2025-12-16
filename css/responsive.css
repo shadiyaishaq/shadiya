@@ -1,17 +1,21 @@
+
 @media screen and (max-width: 1024px) {
-    
-    .aboutcont h2{
+
+    .aboutcont h2 {
         font-size: 37px;
     }
+
     .aboutcont2 p {
-    font-size: 18px;
+        font-size: 18px;
+    }
 }
-}
+
 @media screen and (max-width:992px) {
-    .cursor-dot {
-    display: none;
-}
     
+    .cursor-dot {
+        display: none;
+    }
+
     .mainmenuhead {
         position: fixed;
         top: 106px;
@@ -24,14 +28,13 @@
         opacity: 0;
         visibility: hidden;
         transition: all 0.3s;
-       
+
     }
 
     .toggle {
         position: relative;
         z-index: 22;
-         padding-right: 10px
-
+        padding-right: 10px
     }
 
     .toggle span {
@@ -50,16 +53,19 @@
 
     }
 
-li{
-    margin-top: 15px;
-}
+    li {
+        margin-top: 15px;
+    }
+
     .menu {
         display: block;
-        
+
     }
-.heroPort {
-    margin: 10px 16px;
-}
+
+    .heroPort {
+        margin: 10px 16px;
+    }
+
     .toggle.show span:nth-child(2) {
         width: 0;
     }
@@ -74,18 +80,17 @@ li{
 }
 
 @media screen and (min-width: 769px)and (max-width: 992px) {
-.aboutcont h2 {
+
+    .aboutcont h2 {
         font-size: 27px;
     }
+
     .aboutcont2 {
-    padding-top: 47px;
+        padding-top: 47px;
+    }
 }
 
-
-
-}
 @media screen and (max-width: 768px) {
-
 
     .abtbox {
         padding: 8px 20px 8px 20px;
@@ -93,7 +98,6 @@ li{
 
     .button {
         margin-right: 45px;
-
     }
 
     .aboutcont2 {
@@ -113,23 +117,14 @@ li{
     }
 }
 
+@media screen and (min-width: 600px) and (max-width: 768px) {
 
+    .logo {
+        padding-left: 15px;
+    }
 
-
-
-
-
-@media screen and (min-width: 600px) and (max-width: 768px){
-
-   
-
-
-.logo{
-    padding-left: 15px;
-}
     .button {
         margin-right: 56px;
-
     }
 
     .heroimg img {
@@ -162,30 +157,28 @@ li{
 
 @media screen and (max-width: 1024px) {
 
-
-    
-    
     .aboutbox {
         padding: 8px 15px 8px 15px;
     }
 
-
-
     .abtboxall {
         padding-top: 53px;
     }
-     .abtcontent h3{
-        font-size: 30px ;
-     }
-     .abtcontent p{
+
+    .abtcontent h3 {
+        font-size: 30px;
+    }
+
+    .abtcontent p {
         font-size: 16px;
-     }
-     .skillcont h1 {
-    font-size: 173px;
+    }
+
+    .skillcont h1 {
+        font-size: 173px;
     }
 }
-@media screen and (max-width: 768px) {
 
+@media screen and (max-width: 768px) {
 
     .aboutboxes {
         gap: 4px;
@@ -203,36 +196,39 @@ li{
         padding: 8px 5px 8px 5px;
         font-size: 15px;
     }
-   
-    
+
     .skillcont h1 {
         font-size: 122px;
         padding-top: 50px;
     }
+
     .abtcontent h3 {
-            font-size: 23px;
+        font-size: 23px;
     }
-            .abtcontent p {
-            font-size: 14px;
-            }
-        }
 
+    .abtcontent p {
+        font-size: 14px;
+    }
+}
 
-
-        @media screen and (min-width: 769px)and (max-width: 992px) {
+@media screen and (min-width: 769px)and (max-width: 992px) {
 
     .aboutbox p {
         font-size: 13px;
     }
+
     .aboutbox {
         padding: 8px 6px 8px 6px;
+    }
+
+    .skillcont h1 {
+        font-size: 125px;
+        padding-top: 45px;
+    }
 }
-.skillcont h1 {
-    font-size: 125px;
-    padding-top: 45px;
-}
-        }
+
 @media screen and (max-width: 600px) {
+
     .aboutconts p {
         top: 60%;
         font-size: 20px;
@@ -313,9 +309,11 @@ li{
     .procont {
         padding-top: 90px;
     }
-    .procont h1{
+
+    .procont h1 {
         font-size: 60px;
     }
+
     .prcontent h4 {
         padding-bottom: 15px;
         padding-top: 20px;
@@ -327,8 +325,6 @@ li{
 
 @media screen and (max-width: 1024px) {
 
-    
-
     .hello h1 {
         padding-left: 51px;
     }
@@ -336,7 +332,6 @@ li{
     .contact p {
         top: 56%;
         left: 37%;
-                
     }
 
     .footer1 p {
@@ -350,20 +345,20 @@ li{
 
 @media screen and (max-width: 768px) {
 
-
     .contact p {
-       left: 33%;
+        left: 33%;
         top: 56%
     }
 
     .hello h1 {
         font-size: 80px;
         padding-left: 3px;
-
     }
-   .button {
+
+    .button {
         margin-right: 10px
     }
+
     .hellopara h4 {
         font-size: 20px;
         padding-top: 37px;
@@ -378,7 +373,6 @@ li{
         padding-left: 58px;
         font-size: 35px;
         padding-bottom: 12px;
-
     }
 
     .footer1 img {
@@ -392,22 +386,25 @@ li{
 }
 
 @media screen and (min-width: 769px)and (max-width: 992px) {
-    .hello h1{
+    .hello h1 {
         font-size: 80px;
         padding-left: 0;
         padding-top: 0;
     }
+
     .hellopara h4 {
-    padding-top: 14px;
-    font-size: 20px;
+        padding-top: 14px;
+        font-size: 20px;
     }
+
     .ftrbox2 {
         margin-top: 0;
     }
-        .contact p {
+
+    .contact p {
         top: 56%;
         left: 33%;
-        }
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -422,7 +419,7 @@ li{
 
     .contact p {
         font-size: 20px;
-                top: 60%;
+        top: 60%;
         left: 32%
     }
 
@@ -442,15 +439,16 @@ li{
         padding-left: 0;
     }
 
- 
-    
-    .hellopara h4{
+    .hellopara h4 {
         padding-top: 0;
     }
+    .endcont p{
+    padding-left: 24px;
+}
 }
 
-@media screen and (min-width: 400px)and  (max-width: 500px) {
-    .contact p{
-left: 23%;
+@media screen and (min-width: 400px)and (max-width: 500px) {
+    .contact p {
+        left: 23%;
     }
 }
