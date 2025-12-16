@@ -7,15 +7,8 @@
     font-size: 18px;
 }
 }
-
-
-
-
-@media screen and (max-width: 768px) {
-
-
-
-.cursor-dot {
+@media screen and (max-width:992px) {
+    .cursor-dot {
     display: none;
 }
     
@@ -78,6 +71,21 @@ li{
     .toggle.show span:nth-child(3) {
         transform: rotate(-45deg) translate(2px, -2px);
     }
+}
+
+@media screen and (min-width: 769px)and (max-width: 992px) {
+.aboutcont h2 {
+        font-size: 27px;
+    }
+    .aboutcont2 {
+    padding-top: 47px;
+}
+
+
+
+}
+@media screen and (max-width: 768px) {
+
 
     .abtbox {
         padding: 8px 20px 8px 20px;
@@ -106,20 +114,12 @@ li{
 }
 
 
-@media screen and (min-width: 769px)and (max-width: 992px) {
-.aboutcont h2 {
-        font-size: 27px;
-    }
-    .aboutcont2 {
-    padding-top: 47px;
-}
-
-}
 
 
 
 
-@media screen and (max-width: 600px) {
+
+@media screen and (min-width: 600px) and (max-width: 768px){
 
    
 
@@ -334,7 +334,8 @@ li{
     }
 
     .contact p {
-        top: 53%;
+        top: 56%;
+        left: 37%;
                 
     }
 
@@ -351,7 +352,7 @@ li{
 
 
     .contact p {
-        right: 30%;
+       left: 33%;
         top: 56%
     }
 
@@ -405,7 +406,7 @@ li{
     }
         .contact p {
         top: 56%;
-        right: 31%;
+        left: 33%;
         }
 }
 
@@ -422,7 +423,7 @@ li{
     .contact p {
         font-size: 20px;
                 top: 60%;
-        left: 33%
+        left: 32%
     }
 
     .icons2 {
@@ -445,5 +446,11 @@ li{
     
     .hellopara h4{
         padding-top: 0;
+    }
+}
+
+@media screen and (min-width: 400px)and  (max-width: 500px) {
+    .contact p{
+left: 23%;
     }
 }

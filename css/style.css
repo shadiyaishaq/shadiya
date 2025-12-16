@@ -458,7 +458,7 @@ a {
     color: #000;
     border-radius: 28px;
     margin-top: 30px;
-    width: 90%;
+    width: 92%;
     padding-top: 60px;
     text-align: center;
     margin: auto;
@@ -842,7 +842,7 @@ a {
 .contact p {
     position: absolute;
     top: 55%;
-    right: 40%;
+   left: 42%;
     font-size: 30px;
     letter-spacing: 7px;
 }
