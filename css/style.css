@@ -1006,7 +1006,7 @@ a {
     padding: 10px 40px;
     text-align: center;
     margin-top: 20px;
-    border: solid 1px #ebcfcf;
+    border: solid 1px #ffff;
     overflow: hidden;
     /* important! hides overflow of the fill */
     z-index: 1;
