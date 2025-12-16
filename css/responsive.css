@@ -62,10 +62,6 @@
 
     }
 
-    .heroPort {
-        margin: 10px 16px;
-    }
-
     .toggle.show span:nth-child(2) {
         width: 0;
     }
@@ -325,14 +321,9 @@
 
 @media screen and (max-width: 1024px) {
 
-    .hello h1 {
-        padding-left: 51px;
-    }
+   
 
-    .contact p {
-        top: 56%;
-        left: 37%;
-    }
+    
 
     .footer1 p {
         font-size: 20px;
@@ -345,10 +336,6 @@
 
 @media screen and (max-width: 768px) {
 
-    .contact p {
-        left: 33%;
-        top: 56%
-    }
 
     .hello h1 {
         font-size: 80px;
@@ -401,10 +388,6 @@
         margin-top: 0;
     }
 
-    .contact p {
-        top: 56%;
-        left: 33%;
-    }
 }
 
 @media screen and (max-width: 600px) {
@@ -420,7 +403,6 @@
     .contact p {
         font-size: 20px;
         top: 60%;
-        left: 32%
     }
 
     .icons2 {
@@ -445,10 +427,4 @@
     .endcont p{
     padding-left: 24px;
 }
-}
-
-@media screen and (min-width: 400px)and (max-width: 500px) {
-    .contact p {
-        left: 23%;
-    }
 }
