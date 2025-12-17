@@ -225,6 +225,10 @@
 
 @media screen and (max-width: 600px) {
 
+    .cursor-dot {
+        display: none;
+    }
+
     .aboutconts p {
         top: 60%;
         font-size: 20px;
@@ -293,6 +297,11 @@
 }
 
 @media screen and (max-width: 600px) {
+
+    .cursor-dot {
+        display: none;
+    }
+
     .procont h1 {
         font-size: 59px;
     }
@@ -392,6 +401,10 @@
 
 @media screen and (max-width: 600px) {
 
+    .cursor-dot {
+        display: none;
+    }
+    
     .contact {
         padding-top: 90px;
     }
