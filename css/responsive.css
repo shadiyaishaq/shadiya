@@ -147,6 +147,37 @@
         padding-bottom: 20px;
     }
 }
+@media screen and (min-width: 340px) and (max-width: 409px) {
+
+.aboutcont h2 {
+        font-size: 31px;
+    }
+
+    .servicecont h3{
+        padding-bottom: 30px;
+    }
+
+    .ftrcont p {
+    font-size: 14px;
+    margin-bottom: 5px;
+    }
+   
+    .ftrcont h1 {
+        font-size: 26px;
+        padding-bottom: 24px;
+    }
+
+    .serboxes{
+        display: block;
+    }
+    .serbox{
+        margin-bottom: 20px;
+    }
+
+     .button4{
+        padding: 6px 18px;
+    }
+}
 
 
 /* ABOUT */
@@ -229,6 +260,11 @@
         display: none;
     }
 
+    .logo img{
+        padding-left: 6px;
+        padding-top: 5px;
+    }
+
     .aboutconts p {
         top: 60%;
         font-size: 20px;
@@ -269,6 +305,34 @@
         top: 25%;
         right: 6%;
         font-size: 16px;
+    }
+}
+
+@media screen and (min-width: 340px) and (max-width: 409px) {
+    
+    .aboutsection {
+        padding-top: 45px;
+    }
+
+    .aboutconts h1 {
+        font-size: 44px;
+    }
+
+    .button6 {
+        width: 151px;
+        padding: 12px 20px 12px 20px;
+    }
+
+    .skillcont h1 {
+        font-size: 108px;
+    }
+
+    .skillsec {
+    padding-top: 55px;
+}
+
+    .button{
+            padding: 6px 30px;
     }
 }
 
@@ -323,6 +387,18 @@
         padding-bottom: 15px;
         padding-top: 20px;
     }
+}
+@media screen and (min-width: 340px) and (max-width: 409px) {
+   
+    .procont h1 {
+        font-size: 48px;
+    }
+
+    .procont p {
+        font-size: 19px;
+    }
+
+
 }
 
 
@@ -405,9 +481,6 @@
         display: none;
     }
 
-    .logo img{
-        padding-left: 6px;
-    }
     .contact {
         padding-top: 90px;
     }
@@ -443,4 +516,14 @@
     .endcont p{
     padding-left: 24px;
 }
+}
+@media screen and (min-width: 340px) and (max-width: 409px) {
+
+        .contact h1 {
+        font-size: 48px;
+    }
+
+     .footer1 p {
+        font-size: 14px;
+    }
 }
