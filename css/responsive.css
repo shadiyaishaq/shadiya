@@ -404,7 +404,10 @@
     .cursor-dot {
         display: none;
     }
-    
+
+    .logo img{
+        padding-left: 6px;
+    }
     .contact {
         padding-top: 90px;
     }
