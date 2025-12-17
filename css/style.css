@@ -324,6 +324,58 @@ a {
     font-weight: 600;
 }
 
+
+.project-img {
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.project-img img {
+    width: 100%;
+    display: block;
+    transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+/* Overlay */
+.project-img .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.55);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+/* Title */
+.project-img .overlay h5 {
+    color: #fff;
+    font-size: 22px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    transform: translateY(20px);
+    transition: transform 0.4s ease;
+}
+
+/* Hover Effects */
+.project-img:hover img {
+    opacity: 0.6;
+    transform: scale(1.05);
+}
+
+.project-img:hover .overlay {
+    opacity: 1;
+}
+
+.project-img:hover .overlay h5 {
+    transform: translateY(0);
+}
+
 .projectbox {
     width: 100%;
     background-color: #FFCACA;

@@ -75,7 +75,7 @@
     }
 }
 
-@media screen and (min-width: 769px)and (max-width: 992px) {
+@media screen and (min-width: 769px)and (max-width: 993px) {
 
     .aboutcont h2 {
         font-size: 27px;
@@ -83,6 +83,14 @@
 
     .aboutcont2 {
         padding-top: 47px;
+    }
+
+    .servicecont h3{
+        font-size: 21px;
+    }
+
+    .serbox h4{
+        font-size: 21px;
     }
 }
 
@@ -129,6 +137,7 @@
 
     .servicecont h3 {
         padding-bottom: 20px;
+        font-size: 21px;
     }
 
     .abtbox {
@@ -141,12 +150,14 @@
 
     .aboutcont h2 {
         font-size: 39px;
+        font-size: 27px;
     }
 
     .aboutcont2 p {
         padding-bottom: 20px;
     }
 }
+
 @media screen and (min-width: 340px) and (max-width: 409px) {
 
 .aboutcont h2 {
