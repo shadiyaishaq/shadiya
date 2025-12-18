@@ -772,7 +772,6 @@ a {
 
 .prbox {
     width: 100%;
-    background-color: #ffcaca3b;
     display: block;
     border-radius: 12px;
     margin: auto;
@@ -782,7 +781,6 @@ a {
 
 .prbox2 {
     width: 100%;
-    background-color: #fadfbf7a;
     display: block;
     border-radius: 12px;
     margin: auto;
@@ -792,7 +790,6 @@ a {
 
 .prbox3 {
     width: 100%;
-    background-color: #bfe4f652;
     display: block;
     border-radius: 12px;
     margin: auto;
@@ -802,7 +799,6 @@ a {
 
 .prbox4 {
     width: 100%;
-    background-color: #dd9f4333;
     display: block;
     border-radius: 12px;
     margin: auto;
@@ -812,7 +808,14 @@ a {
 
 .prbox5 {
     width: 100%;
-    background-color: #E6D6EB;
+    display: block;
+    border-radius: 12px;
+    margin: auto;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+.prbox6 {
+    width: 100%; 
     display: block;
     border-radius: 12px;
     margin: auto;
