@@ -256,7 +256,21 @@
     }
 }
 
-@media screen and (min-width: 601px) and (max-width: 767px) {}
+@media screen and (min-width: 601px) and (max-width: 767px) {
+
+    .aboutsection {
+    padding-top: 40px;
+}
+
+.abtbtns {
+    padding-top: 0;
+    padding-bottom: 30px;
+}
+
+    .abtboxall {
+        padding-top: 10px;
+    }
+}
 
 
 @media screen and (min-width: 769px)and (max-width: 992px) {
@@ -408,6 +422,13 @@
         padding-bottom: 15px;
         padding-top: 20px;
     }
+}
+
+@media screen and (min-width: 601px) and (max-width: 767px) {
+
+        .prcontent h4 {
+            padding-top: 15px;
+        }
 }
 @media screen and (min-width: 340px) and (max-width: 459px) {
    
