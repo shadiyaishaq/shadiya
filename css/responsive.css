@@ -158,12 +158,19 @@
     }
 }
 
-@media screen and (min-width: 340px) and (max-width: 409px) {
+@media screen and (min-width: 340px) and (max-width: 459px) {
 
 .aboutcont h2 {
         font-size: 31px;
     }
 
+    .buttons{
+        display: block;
+    }
+
+    .btn{
+        width: 100%;
+    }
     .servicecont h3{
         padding-bottom: 30px;
     }
@@ -249,6 +256,9 @@
     }
 }
 
+@media screen and (min-width: 601px) and (max-width: 767px) {}
+
+
 @media screen and (min-width: 769px)and (max-width: 992px) {
 
     .aboutbox p {
@@ -319,7 +329,7 @@
     }
 }
 
-@media screen and (min-width: 340px) and (max-width: 409px) {
+@media screen and (min-width: 340px) and (max-width: 459px) {
     
     .aboutsection {
         padding-top: 45px;
@@ -399,7 +409,7 @@
         padding-top: 20px;
     }
 }
-@media screen and (min-width: 340px) and (max-width: 409px) {
+@media screen and (min-width: 340px) and (max-width: 459px) {
    
     .procont h1 {
         font-size: 48px;
@@ -528,7 +538,7 @@
     padding-left: 24px;
 }
 }
-@media screen and (min-width: 340px) and (max-width: 409px) {
+@media screen and (min-width: 340px) and (max-width: 459px) {
 
         .contact h1 {
         font-size: 48px;

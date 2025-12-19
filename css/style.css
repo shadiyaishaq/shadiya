@@ -343,8 +343,7 @@ a {
 
 
 .projectbox {
-    width: 100%;
-    background-color: #b8956d;
+    width: 100%; 
     display: block;
     border-radius: 12px;
     margin: auto;
@@ -353,8 +352,7 @@ a {
 }
 
 .projectbox1 {
-    width: 100%;
-    background-color: #bfdfb6;
+    width: 100%;   
     display: block;
     border-radius: 12px;
     margin: auto;
@@ -364,7 +362,6 @@ a {
 
 .projectbox3 {
     width: 100%;
-    background-color:#b99b9b ;
     display: block;
     border-radius: 12px;
     margin: auto;
